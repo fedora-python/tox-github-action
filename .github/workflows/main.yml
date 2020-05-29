@@ -1,0 +1,18 @@
+on: [push]
+
+name: Tox sanity test
+
+jobs:
+  test_job:
+    runs-on: ubuntu-latest
+    name: Tox test
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run an example test
+      id: test
+      uses: ./
+      with:
+        tox_env: ${{ matrix.tox_env }}
+    strategy:
+      matrix:
+        tox_env: [py27, py35, py36, py37, py38, py39, pypy, pypy2]
