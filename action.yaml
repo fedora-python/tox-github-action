@@ -13,3 +13,4 @@ runs:
     - '-e${{ inputs.tox_env }}'
 branding:
   color: green
+  icon: check
