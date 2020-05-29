@@ -1,4 +1,4 @@
-![Tox sanity test](https://github.com/encukou/tox-github-action/workflows/Tox%20sanity%20test/badge.svg)
+![Tox sanity test](https://github.com/fedora-python/tox-github-action/workflows/Tox%20sanity%20test/badge.svg)
 
 # Tox Github Action
 
@@ -9,7 +9,7 @@ This GitHub action tests a checked-out Python project using
 ## Usage
 
 ```yaml
-- uses: encukou/tox-github-action
+- uses: fedora-python/tox-github-action
   with:
     # The tox environment to run
     # Default: py38 (subject to change as new Python releases come out)
