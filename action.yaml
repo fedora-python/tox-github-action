@@ -7,7 +7,7 @@ inputs:
     description: Tox environment to run the tests on
 runs:
   using: docker
-  image: frenzymadness/fedora-python-tox
+  image: docker://frenzymadness/fedora-python-tox
   entrypoint: tox
   args:
     - '-e${{ inputs.tox_env }}'
