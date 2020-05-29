@@ -22,3 +22,12 @@ after checking out your code.
 You can use the `matrix` strategy to run with multiple Tox environments.
 
 For an example, see [this project's workflow](.github/workflows/main.yml).
+
+
+## License
+
+The code, content and configuration in this repository is given away unter the
+CC0 1.0 Universal Public Domain Dedication:
+https://creativecommons.org/publicdomain/zero/1.0/
+
+May it serve you well!
