@@ -1,0 +1,23 @@
+on:
+  push:
+  pull_request:
+
+name: Run tests with code in this repository
+# (This can't be used as an example for other projects)
+
+jobs:
+  tox_test:
+    name: Tox test
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run Tox tests
+      id: test
+      uses: ./
+      with:
+        tox_env: ${{ matrix.tox_env }}
+    strategy:
+      matrix:
+        tox_env: [py39]
+
+    # Use GitHub's Linux Docker host
+    runs-on: ubuntu-latest
