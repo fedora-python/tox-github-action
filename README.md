@@ -1,4 +1,5 @@
-![Tox sanity test](https://github.com/fedora-python/tox-github-action/workflows/Tox%20sanity%20test/badge.svg)
+![Run Tox tests](https://github.com/fedora-python/tox-github-action/workflows/Run%20Tox%20tests/badge.svg)
+![Run tests with code in this repository](https://github.com/fedora-python/tox-github-action/workflows/Run%20tests%20with%20code%20in%20this%20repository/badge.svg)
 
 # Tox Github Action
 
