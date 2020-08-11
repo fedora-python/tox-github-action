@@ -21,9 +21,14 @@ Add the action to your workflow file, e.g. `.github/workflows/main.yml`,
 after checking out your code.
 
 You can use the `matrix` strategy to run with multiple Tox environments.
-
 For an example, see [this project's workflow](.github/workflows/main.yml).
+Unfortunately, you need to repeat all the environment names
+from your Tox configuration.
+(As far as we know, this is required in order to have individual environments
+show up as separate runs on GitHub. Discuss this limitation in [issue 8].)
 
+
+[issue 8]: https://github.com/fedora-python/tox-github-action/issues/8
 
 ## License
 
