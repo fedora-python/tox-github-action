@@ -27,6 +27,16 @@ from your Tox configuration.
 (As far as we know, this is required in order to have individual environments
 show up as separate runs on GitHub. Discuss this limitation in [issue 8].)
 
+Optionally, you can install RPM packages from Fedora by setting the
+`dnf_install` to a space separated list of packages (or provides, groups etc.,
+the string will be literally used in `dnf install ...`):
+
+```yaml
+- uses: fedora-python/tox-github-action
+  with:
+    tox_env: py38
+    dnf_install: libffi-devel libyaml-devel
+```
 
 [issue 8]: https://github.com/fedora-python/tox-github-action/issues/8
 
