@@ -27,6 +27,19 @@ from your Tox configuration.
 (As far as we know, this is required in order to have individual environments
 show up as separate runs on GitHub. Discuss this limitation in [issue 8].)
 
+Similarly, you can run tox on multiple architectures:
+
+```yaml
+strategy:
+  matrix:
+    arch: [amd64, arm64, ppc64le, s390x]
+...
+- uses: fedora-python/tox-github-action
+  with:
+    tox_env: py38
+    arch: ${{ matrix.arch }}
+```
+
 You can also install RPM packages from Fedora by setting `dnf_install` to
 a space-separated list of *provides*, such as:
 
