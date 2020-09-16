@@ -5,13 +5,17 @@ inputs:
     required: true
     default: 'py38'
     description: Tox environment to run the tests on
+  arch:
+    required: false
+    default: 'amd64'
+    description: The architecture to run on (amd64 (default), arch64, ppc64le or s390x)
   dnf_install:
     required: false
     default: ''
     description: Space separated packages to install via dnf install (can contain options)
 runs:
   using: docker
-  image: docker://fedorapython/fedora-python-tox
+  image: docker://fedorapython/fedora-python-tox:${{ inputs.arch }}
   env:
     TOXENV: ${{ inputs.tox_env }}
     DNF_INSTALL: ${{ inputs.dnf_install }}
