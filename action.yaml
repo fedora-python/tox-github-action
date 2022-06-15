@@ -11,7 +11,7 @@ inputs:
     description: Space separated packages to install via dnf install (can contain options)
 runs:
   using: docker
-  image: docker://fedorapython/fedora-python-tox:f34
+  image: docker://fedorapython/fedora-python-tox:f35
   env:
     TOXENV: ${{ inputs.tox_env }}
     DNF_INSTALL: ${{ inputs.dnf_install }}
