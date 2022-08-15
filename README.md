@@ -46,11 +46,25 @@ groups or DNF options.
 
 [issue 8]: https://github.com/fedora-python/tox-github-action/issues/8
 
+If your application isn't in the root of your project, set `workdir`. The action
+will switch to the specified path before tox execution.
+
+```yaml
+- uses: fedora-python/tox-github-action
+  with:
+    tox_env: py38
+    workdir: "python/"
+```
+
 ## Changelog
 
 Until version 0.4, this action always used the latest [fedora-python-tox](https://hub.docker.com/repository/docker/fedorapython/fedora-python-tox)
 image. Since version 34.0, the first number in the version (also sometimes
 referred to as the "major version") represents the release of Fedora used in the image.
+
+### v35.1
+
+* Allows to run tests from a subdirectory via `workdir`.
 
 ### v35.0
 

@@ -9,12 +9,18 @@ inputs:
     required: false
     default: ''
     description: Space separated packages to install via dnf install (can contain options)
+  workdir:
+    required: false
+    default: ''
+    description: Path to switch to before running tox.
+
 runs:
   using: docker
   image: docker://fedorapython/fedora-python-tox:f35
   env:
     TOXENV: ${{ inputs.tox_env }}
     DNF_INSTALL: ${{ inputs.dnf_install }}
+    WORKDIR: ${{ inputs.workdir }}
 branding:
   color: green
   icon: check
