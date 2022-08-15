@@ -20,6 +20,7 @@ jobs:
       matrix:
         tox_env: [py39]
         dnf_install: ["", "libffi-devel", "--enablerepo=updates-testing libffi-devel libyaml-devel"]
+        workdir: ["", "./test/", "test"]
 
     # Use GitHub's Linux Docker host
     runs-on: ubuntu-latest
