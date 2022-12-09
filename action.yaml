@@ -16,7 +16,7 @@ inputs:
 
 runs:
   using: docker
-  image: docker://fedorapython/fedora-python-tox:f35
+  image: docker://fedorapython/fedora-python-tox:f36
   env:
     TOXENV: ${{ inputs.tox_env }}
     DNF_INSTALL: ${{ inputs.dnf_install }}
