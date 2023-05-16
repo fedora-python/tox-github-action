@@ -65,7 +65,7 @@ referred to as the "major version") represents the release of Fedora used in the
 ### v37.0
 
 * Uses Fedora 37 as the base container image.
-* Pypy 3.7 is no longer available.
+* PyPy 3.7 is no longer available.
 
 ### v36.0
 
