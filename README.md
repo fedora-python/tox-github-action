@@ -13,8 +13,8 @@ This GitHub action tests a checked-out Python project using
 - uses: fedora-python/tox-github-action
   with:
     # The tox environment to run
-    # Default: py38 (subject to change as new Python releases come out)
-    tox_env: py38
+    # Default: py311 (subject to change as new Python releases come out)
+    tox_env: py311
 ```
 
 Add the action to your workflow file, e.g. `.github/workflows/main.yml`,
