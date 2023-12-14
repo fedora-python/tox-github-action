@@ -62,6 +62,11 @@ Until version 0.4, this action always used the latest [fedora-python-tox](https:
 image. Since version 34.0, the first number in the version (also sometimes
 referred to as the "major version") represents the release of Fedora used in the image.
 
+### v38.0
+
+* Uses Fedora 38 as the base container image.
+* PyPy 3.8 is no longer available.
+
 ### v37.0
 
 * Uses Fedora 37 as the base container image.
