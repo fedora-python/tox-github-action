@@ -9,6 +9,6 @@ envlist = py27,py36,py38,py39,py310,py311,py312,py313,py314,pypy2,pypy3
 skipsdist = True
 
 [testenv]
-deps = pytest >= 3.0.0, <4
+deps = pytest >= 3.0.0
 commands = pytest test/test.py
 """
