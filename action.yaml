@@ -3,7 +3,7 @@ description: Runs tests with Tox
 inputs:
   tox_env:
     required: true
-    default: 'py311'
+    default: 'py312'
     description: Tox environment to run the tests on
   dnf_install:
     required: false
