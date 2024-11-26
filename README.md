@@ -13,8 +13,8 @@ This GitHub action tests a checked-out Python project using
 - uses: fedora-python/tox-github-action
   with:
     # The tox environment to run
-    # Default: py311 (subject to change as new Python releases come out)
-    tox_env: py311
+    # Default: py312 (subject to change as new Python releases come out)
+    tox_env: py312
 ```
 
 Add the action to your workflow file, e.g. `.github/workflows/main.yml`,
@@ -66,6 +66,7 @@ referred to as the "major version") represents the release of Fedora used in the
 
 * Uses Fedora 40 as the base container image.
 * Python 3.7 is no longer available.
+* Python 3.12 is now the default tox environment if none is configured.
 
 ### v39.0
 
