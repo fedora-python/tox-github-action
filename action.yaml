@@ -3,7 +3,7 @@ description: Runs tests with Tox
 inputs:
   tox_env:
     required: true
-    default: 'py312'
+    default: 'py313'
     description: Tox environment to run the tests on
   dnf_install:
     required: false
@@ -16,7 +16,7 @@ inputs:
 
 runs:
   using: docker
-  image: docker://fedorapython/fedora-python-tox:f40
+  image: docker://fedorapython/fedora-python-tox:f41
   env:
     TOXENV: ${{ inputs.tox_env }}
     DNF_INSTALL: ${{ inputs.dnf_install }}
