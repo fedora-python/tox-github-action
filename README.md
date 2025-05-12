@@ -62,6 +62,13 @@ Until version 0.4, this action always used the latest [fedora-python-tox](https:
 image. Since version 34.0, the first number in the version (also sometimes
 referred to as the "major version") represents the release of Fedora used in the image.
 
+### v41.0
+
+* Uses Fedora 41 as the base container image.
+* Python 2.7 is no longer available.
+* PyPy 3.11 is now available
+* Python 3.13 is now the default tox environment if none is configured.
+
 ### v40.0
 
 * Uses Fedora 40 as the base container image.
