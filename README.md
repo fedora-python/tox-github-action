@@ -37,7 +37,7 @@ a space-separated list of *provides*, such as:
 ```yaml
 - uses: fedora-python/tox-github-action
   with:
-    tox_env: py38
+    tox_env: py39
     dnf_install: pkgconfig(libffi) libgit2-devel
 ```
 
@@ -52,7 +52,7 @@ will switch to the specified path before tox execution.
 ```yaml
 - uses: fedora-python/tox-github-action
   with:
-    tox_env: py38
+    tox_env: py39
     workdir: "python/"
 ```
 
@@ -61,6 +61,14 @@ will switch to the specified path before tox execution.
 Until version 0.4, this action always used the latest [fedora-python-tox](https://hub.docker.com/repository/docker/fedorapython/fedora-python-tox)
 image. Since version 34.0, the first number in the version (also sometimes
 referred to as the "major version") represents the release of Fedora used in the image.
+
+### v42.0
+
+* Uses Fedora 42 as the base container image.
+* Python 3.8 is no longer available.
+* PyPy 3.9 is no longer available
+* Freethreading Python is available (3.14t and 3.15t)
+* Python 3.14 is now the default tox environment if none is configured.
 
 ### v41.0
 

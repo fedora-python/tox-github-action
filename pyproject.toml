@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [tool.tox]
 legacy_tox_ini = """
 [tox]
-envlist = py27,py36,py38,py39,py310,py311,py312,py313,py314,pypy2,pypy3
+envlist = py36,py39,py310,py311,py312,py313,py314,py314t,pypy2,pypy3
 skipsdist = True
 
 [testenv]
